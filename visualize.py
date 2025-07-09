@@ -1,7 +1,12 @@
 import open3d as o3d
+import numpy as np
 
-# Load your point cloud
-pcd = o3d.io.read_point_cloud("cube.pcd")
+# Load TXT data into a NumPy array
+points = np.loadtxt("points.txt")
 
-# Visualize it
+# Convert to Open3D point cloud
+pcd = o3d.geometry.PointCloud()
+pcd.points = o3d.utility.Vector3dVector(points)
+
+# Visualize
 o3d.visualization.draw_geometries([pcd])
