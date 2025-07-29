@@ -63,5 +63,5 @@ def pcd_to_stl_and_visualize(pcd_path):
             print("❌ All visualization methods failed. Open 'output.stl' in MeshLab/Blender.")
 
 # Example usage
-pcd_file_path = "cube.pcd"  # 🚨 Replace with your file path!
+pcd_file_path = "mouse.pcd"  # 🚨 Replace with your file path!
 pcd_to_stl_and_visualize(pcd_file_path)
